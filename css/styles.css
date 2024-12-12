@@ -1,0 +1,438 @@
+@import url(./reset.css); @import url(./variables.css);
+
+
+/* ============================================================  GLOBAL STYLES  ============================================================ */
+
+/* ==============================  CONTAINER  ============================== */
+
+body {
+    padding: 4rem var(--padding-container);
+    font-family: var(--body-font);
+    letter-spacing: var(--letter-spacing);
+    overflow-x: hidden;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--layout-margin);
+}
+
+/* ==============================  TEXT  ============================== */
+
+p, a, li {
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-text);
+}
+
+a {
+    cursor: pointer;
+}
+
+/* ==============================  TITLES & SUBTITLES  ============================== */
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    line-height: var(--line-height-title);
+}
+
+.section__title {
+    margin-bottom: 4rem;
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .2rem;
+}
+
+.item__title {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .2rem;
+}
+
+/* ==============================  BOX BACKGROUND STYLES  ============================== */
+
+.bg__elements {
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius-elements);
+    border: 1px solid var(--border-color);
+    background: var(--gradient);
+}
+
+/* ==============================  COLOR ACCENT ============================== */
+
+span {
+    color: var(--color-accent);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ==============================  MARGIN ============================== */
+
+.margin__top-button {
+    margin: 4rem 0;
+}
+
+
+
+
+
+
+
+/* ============================================================  HEADER  ============================================================ */
+
+.header {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* ==============================  LOGO  ============================== */
+
+.header__logo-img {
+    width: var(--logo-size);
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================================================  PROFILE  ============================================================ */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-gap);
+}
+
+/* ==============================  GREETING - NAME - INTRO ============================== */
+
+.profile__greeting {
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-accent);
+}
+
+.profile__name {
+    font-size: var(--heading-large);
+    font-weight: var(--font-weight-black);
+}
+
+.profile__intro {
+    font-size: var(--text-large);
+    font-weight: var(--font-weight-extrabold);
+}
+
+/* ==============================  PORTFOLIO LINKS ============================== */
+
+.profile__portfolio {
+    width: 100%;
+}
+
+.profile__portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--layout-gap);
+    width: inherit;
+}
+
+.profile__portfolio-item {
+    display: flex;
+    align-items: center;
+    gap: var(--layout-gap);
+    padding: .5rem 1.5rem;
+    list-style: none;
+    background: var(--gradient);
+}
+
+.profile__portfolio-anchor {
+    font-weight: var(--font-weight-medium);
+    color: var(--alternative-text-color);
+}
+
+.profile__portfolio-icon {
+    font-size: 1.7rem;
+}
+
+
+
+
+
+
+/* ============================================================  SKILLS  ============================================================ */
+
+.skills__item {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "icon title"
+    "icon description";
+    gap: var(--layout-gap);
+    height: 100%;
+}
+
+.skills__item-icon {
+    grid-area: icon;
+    justify-self: center;
+    align-self: center;
+    font-size: var(--large-icon-size);
+}
+
+.skills__item-title {
+    grid-area: title;
+}
+
+.skills__item-description {
+    grid-area: description;
+    color: var(--secondary-text-color);
+}
+
+
+
+
+/* ============================================================  TOOLS  ============================================================ */
+
+.tools__item, .projects__item, .education__item, .courses__item {
+    padding: var(--padding-card);
+    background: var(--gradient);
+}
+
+.tools__name {
+    margin-bottom: var(--layout-gap);
+}
+
+.tools__description {
+    color: var(--secondary-text-color);
+}
+
+
+
+
+
+/* ============================================================  PROJECTS  ============================================================ */
+
+.projects__info {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.projects__anchor-github {
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+}
+
+.projects__icon {
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.projects__name-anchor{
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight-black);
+    color: var(--alternative-text-color);
+}
+
+.projects__description {
+    color: var(--secondary-text-color);
+}
+
+.projects__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--layout-gap);
+}
+
+.projects__technologies-item {
+    padding: .5rem 1.5rem;
+    font-size: var(--text-small);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background: var(--gradient-secondary);
+}
+
+
+
+
+
+/* ============================================================  EDUCATION  ============================================================ */
+
+.education__institute {
+    margin-bottom: .4rem;
+    font-family: var(--body-font);
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight-black);
+    color: var(--alternative-text-color);
+}
+
+.education__Specialization {
+    font-family: var(--body-font);
+    font-size: var(--text-large);
+}
+
+.education__Specialization, .education__year {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent);
+}
+
+.education__year {
+    font-size: var(--text-small);
+}
+
+.education__description {
+    color: var(--secondary-text-color);
+}
+
+.education__topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--layout-gap);
+}
+
+.education__topics-item {
+    padding: .5rem 1.5rem;
+    font-size: var(--text-small);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background: var(--gradient-secondary);
+}
+
+
+
+
+
+/* ============================================================  COURSES  ============================================================ */
+
+.courses__route-path {
+    font-size: var(--text-small);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.courses__name {
+    margin-bottom: .4rem;
+    font-family: var(--body-font);
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight-black);
+    color: var(--alternative-text-color);
+}
+
+.courses__name span {
+    font-weight: var(--font-weight-black);
+}
+
+.courses__Specialization {
+    font-size: var(--text-large);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.courses__institute {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-large);
+    color: var(--text-color);
+}
+
+.courses__includes span {
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
+.courses__certificates, .courses__icon {
+    font-weight: var(--font-weight-bold);
+    vertical-align: middle;
+    color: var(--color-accent);
+}
+
+.courses__description {
+    color: var(--secondary-text-color);
+}
+
+.courses__topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--layout-gap);
+}
+
+.courses__topics-item {
+    padding: .5rem 1.5rem;
+    background: var(--gradient-secondary);
+}
+
+.courses__topics-anchor {
+    font-size: var(--text-small);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+
+
+
+
+/* ============================================================  LANGUAGES  ============================================================ */
+
+.languages__item {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "icon title"
+    "icon description";
+    gap: var(--layout-gap);
+    height: 100%;
+}
+
+.languages__icon {
+    grid-area: icon;
+    justify-self: center;
+    align-self: center;
+    width: var(--large-icon-size);
+}
+
+.languages__name {
+    grid-area: title;
+    text-transform: uppercase;
+}
+
+.languages__description {
+    grid-area: description;
+    color: var(--secondary-text-color);
+}
+
+
+
+
+
+/* ============================================================  FOOTER  ============================================================ */
+.footer__info {
+    padding: 4rem 0;
+    font-size: var(--text-medium);
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.footer__info span {
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-bold);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+:root {
+
+/* ============================================================  COLORS  ============================================================ */
+
+    --color-primary:         #131313;
+    --color-secondary:       #202020;
+    --background-color:      #080808;
+    --background-elements:   #9f9f9f;
+    --border-color:          #343434;
+    --gradient:              linear-gradient(to bottom, #131313, #1f1f22);
+    --gradient-secondary:    linear-gradient(to bottom, #080808, #131313);
+    --text-color:            #d1d1d1;
+    --secondary-text-color:  #838383;
+    --alternative-text-color:#fff;
+    --active-button-color:   #4a4a4a;
+    --button-color-inactive: #303030;
+    --color-accent:          #fea800;
+
+/* ============================================================  FONTS  ============================================================ */
+
+/* ==============================  TYPE  ============================== */
+
+    --body-font:              "Open Sans", sans-serif;
+    --heading-font:           "Fira Code", monospace;
+
+/* ==============================  SIZE  ============================== */
+
+    --text-small:             clamp(1rem, 2.5vw, 1.2rem); /* Textos secundarios o pequeños */
+    --text-medium:            clamp(1.2rem, 3vw, 1.6rem); /* Texto principal o párrafos */
+    --text-large:             clamp(1.5rem, 3.5vw, 2rem); /* Subtítulos secundarios */
+    --heading-small:          clamp(2rem, 4vw, 2.8rem); /* Títulos secundarios */
+    --heading-medium:         clamp(2.5rem, 5vw, 4rem); /* Títulos principales */
+    --heading-large:          clamp(3rem, 6vw, 5rem); /* Encabezados grandes */
+
+/* ==============================  WEIGHT  ============================== */
+
+    --font-weight-regular:    400;
+    --font-weight-medium:     500;
+    --font-weight-semibold:   600;
+    --font-weight-bold:       700;
+    --font-weight-extrabold:  800;
+    --font-weight-black:      900;
+
+/* ==============================  LINE HEIGHT & SPACING ============================== */
+
+    --line-height-text:       clamp(1.5, 3vw, 1.75);
+    --line-height-title:      clamp(1.2, 2.5vw, 1.4);
+    --letter-spacing:         clamp(0px, 0.2vw, 0.5px);
+
+/* ============================================================   SPACING  ============================================================ */
+
+/* ==============================  BUTTONS  ============================== */
+
+    --padding-button-spacing: clamp(.8rem, 2vw, 1.6rem);
+    --margin-button-spacing:  clamp(.8rem, 2vw, 1.6rem);
+
+/* ==============================  LAYOUT  ============================== */
+
+    --layout-padding:         clamp(1.6rem, 3vw, 3.2rem);
+    --layout-margin:          clamp(1.6rem, 4vw, 4.8rem);
+    --layout-gap:             clamp(.5rem, 4vw, 1rem);
+
+    /* ==============================  CONTENT  ============================== */
+
+    --content-padding:        clamp(1.2rem, 2.5vw, 2.4rem);
+    --content-margin:         clamp(1.2rem, 2.5vw, 2.4rem);
+    --content-gap:            clamp(1.2rem, 3vw, 2.4rem);
+    --padding-container:      clamp(3rem, 8vw, 24rem);
+    --padding-card:           clamp(3rem, 8vw, 8rem);
+
+/* ============================================================   VISUAL STYLES  ============================================================ */
+
+/* ==============================  ICONS & IMAGES ============================== */
+
+    --standard-icon-size:     clamp(2.4rem, 4vw, 4.8rem);
+    --large-icon-size:        clamp(3.2rem, 4vw, 6.4rem);
+    --logo-size:              clamp(10rem, 10vw, 30rem);
+    --image-size:             clamp(20rem, 10vw, 35rem);
+
+/* ==============================  BORDER RADIUS  ============================== */
+
+    --border-radius-elements: 1rem;
+    --border-radius-items:    5rem;
+}
